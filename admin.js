@@ -1,5 +1,5 @@
 const API_URL =
-  "https://script.google.com/macros/s/AKfycbyO-5yjW9YvTJ9C-OXwhazPBCrr90ZFyfXgCPLYf_UKgEKri2HieSIxyS4jeiD6ZTZHHQ/exec";
+  "https://script.google.com/macros/s/AKfycbz_0qRLzhXUiR9DgUsHaNu01CI--AYmmqlF3EDnfgvSFv9vPUcAU-1WJU4qxRXod920Aw/exec";
 if (
   window.location.pathname.includes("dashboard.html") &&
   sessionStorage.getItem("login") !== "true"
