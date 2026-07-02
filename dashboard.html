@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard Admin BK</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>Dashboard Admin BK</h1>
+
+<button class="logout-btn" onclick="logout()">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</button>
+
+</div>
+
+<!-- ================= Upload Materi ================= -->
+
+<div class="card">
+
+<h2>Upload Materi</h2>
+
+<input
+type="text"
+id="judul"
+placeholder="Masukkan judul materi">
+
+<select id="kategori">
+
+<option value="">Pilih Kategori</option>
+
+<option value="Pribadi">Pribadi</option>
+
+<option value="Sosial">Sosial</option>
+
+<option value="Belajar">Belajar</option>
+
+<option value="Karier">Karier</option>
+
+</select>
+
+<input
+type="file"
+id="pdf"
+accept=".pdf">
+
+<button class="upload-btn" onclick="uploadMateri()">
+
+<i class="fa-solid fa-upload"></i>
+
+Upload Materi
+
+</button>
+
+</div>
+
+<!-- ================= Daftar Materi ================= -->
+
+<div class="card">
+
+<h2>Daftar Materi</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Judul</th>
+
+<th>Kategori</th>
+
+<th>PDF</th>
+
+</tr>
+
+</thead>
+
+<tbody id="materiTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
