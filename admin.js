@@ -1,41 +1,22 @@
 const API_URL =
-  "https://script.google.com/macros/s/AKfycbwTEgSvwt4JGEtHI8jzCUvU4z2ngq1H0wdAYtkazaoNeGMl8sxAHcbdMaM-ja2MmkpsBw/exec";
-
-async function login() {
+  "https://script.google.com/macros/s/AKfycbyO-5yjW9YvTJ9C-OXwhazPBCrr90ZFyfXgCPLYf_UKgEKri2HieSIxyS4jeiD6ZTZHHQ/exec";
+if (
+  window.location.pathname.includes("dashboard.html") &&
+  sessionStorage.getItem("login") !== "true"
+) {
+  window.location.href = "login.html";
+}
+function login() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  try {
-    const response = await fetch(API_URL, {
-      method: "POST",
-      body: JSON.stringify({
-        action: "login",
-        username: username,
-        password: password,
-      }),
-    });
+  if (username === "admin" && password === "admin123") {
+    sessionStorage.setItem("login", "true");
 
-    const result = await response.json();
-
-    if (result.success) {
-      sessionStorage.setItem("login", "true");
-
-      window.location.href = "dashboard.html";
-    } else {
-      document.getElementById("pesan").innerText =
-        "Username atau Password salah.";
-    }
-  } catch (err) {
-    console.error(err);
-
+    window.location.href = "dashboard.html";
+  } else {
     document.getElementById("pesan").innerText =
-      "Tidak dapat terhubung ke server.";
-  }
-}
-
-if (window.location.pathname.includes("dashboard.html")) {
-  if (sessionStorage.getItem("login") !== "true") {
-    window.location.href = "login.html";
+      "Username atau Password salah.";
   }
 }
 
@@ -63,14 +44,16 @@ async function uploadMateri() {
     const base64 = reader.result.split(",")[1];
 
     try {
+      const formData = new FormData();
+
+      formData.append("judul", judul);
+      formData.append("kategori", kategori);
+      formData.append("fileName", file.name);
+      formData.append("file", base64);
+
       const response = await fetch(API_URL, {
         method: "POST",
-        body: JSON.stringify({
-          judul,
-          kategori,
-          fileName: file.name,
-          file: base64,
-        }),
+        body: formData,
       });
 
       const result = await response.json();
