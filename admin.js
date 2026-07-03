@@ -1,7 +1,8 @@
 // =====================================
 // CONFIG
 // =====================================
-const API_URL = "https://script.google.com/macros/s/AKfycbxmhYaWvogCRnUQdvX2MXBPn03XiihMN11OFIS6HqI37wGfboFK3WR2A8o883ndQS6o9g/exec";
+const API_URL =
+  "https://script.google.com/macros/s/AKfycbxmPaRvYb8YTg39jBAwGm4SWNnbBvfEeJtsZL4DDBanIRm8XRzdIMNL9WYrkkf41jB0CA/exec";
 const USERNAME = "admin";
 const PASSWORD = "admin123";
 
