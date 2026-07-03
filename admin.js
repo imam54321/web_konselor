@@ -1,7 +1,8 @@
 // =====================================
 // CONFIG
 // =====================================
-const API_URL = "https://script.google.com/macros/s/AKfycby_J4mI4Cw9qF6wzeIYCbNv7ls1VAhTRADPebxuL9lXzFA0kdA-J6fkRyA2X_pvl4xaQA/exec"
+const API_URL =
+  "https://script.google.com/macros/s/AKfycbxJMMOfL1dAj8cgX-VePQjgxEWxtaBr8ElZwb43mN2E97FVzwcktobskCcqxPAiu23fCA/exec";
 const USERNAME = "admin";
 const PASSWORD = "admin123";
 
@@ -44,7 +45,6 @@ function logout() {
 // UPLOAD MATERI
 // =====================================
 async function uploadMateri() {
-
   const judul = document.getElementById("judul").value.trim();
   const kategori = document.getElementById("kategori").value;
   const file = document.getElementById("pdf").files[0];
@@ -81,7 +81,6 @@ async function uploadMateri() {
   const reader = new FileReader();
 
   reader.onload = async () => {
-
     const base64 = reader.result.split(",")[1];
 
     const formData = new FormData();
@@ -92,10 +91,9 @@ async function uploadMateri() {
     formData.append("file", base64);
 
     try {
-
       const response = await fetch(API_URL, {
         method: "POST",
-        body: formData
+        body: formData,
       });
 
       if (!response.ok) {
@@ -105,33 +103,24 @@ async function uploadMateri() {
       const result = await response.json();
 
       if (result.success) {
-
         status.style.color = "green";
         status.innerText = "✅ Materi berhasil diupload.";
 
         document.getElementById("uploadForm").reset();
-
       } else {
-
         status.style.color = "red";
         status.innerText = result.message;
-
       }
-
     } catch (err) {
-
       console.error(err);
 
       status.style.color = "red";
       status.innerText = "❌ Upload gagal.";
-
     }
 
     btn.disabled = false;
     btn.innerText = "Upload Materi";
-
   };
 
   reader.readAsDataURL(file);
-
 }
