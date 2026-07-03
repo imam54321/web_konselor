@@ -2,8 +2,8 @@
 // Konfigurasi
 // ============================
 const API_URL =
-"https://script.google.com/macros/s/AKfycbzBlWd3PpxO7j9DehnsW1WiRQ_FyWYZQ-Zgj674te-DcHbLxTsMmztQTo3W8IW4449o3Q/exec"
-// ============================
+  "https://script.google.com/macros/s/AKfycbwTEgSvwt4JGEtHI8jzCUvU4z2ngq1H0wdAYtkazaoNeGMl8sxAHcbdMaM-ja2MmkpsBw/exec";
+
 // Mobile Menu
 // ============================
 const menuToggle = document.querySelector(".menu-toggle");
