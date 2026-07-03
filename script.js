@@ -1,7 +1,7 @@
 // ============================
 // Konfigurasi
 // ============================
-const API_URL = "https://script.google.com/macros/s/AKfycbxp7LTyk1aiPtUJ5KMA8S4EiH0Um3B1SCN_RJUhjlDg_u_2RNiIbdSaSqXFCD0ZNU1rMA/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbxmhYaWvogCRnUQdvX2MXBPn03XiihMN11OFIS6HqI37wGfboFK3WR2A8o883ndQS6o9g/exec";
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector("nav ul");
 
