@@ -345,3 +345,525 @@ nav ul li a.active{
   from{opacity:0; transform:translateY(10px);}
   to{opacity:1; transform:translateY(0);}
 }
+.btn-card{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:10px 22px;
+
+background:#2E8B57;
+
+color:#fff;
+
+text-decoration:none;
+
+border-radius:8px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-card:hover{
+
+background:#1f6f45;
+
+transform:translateY(-2px);
+
+}
+
+/* ================= MATERI DETAIL ================= */
+
+.materi-detail{
+
+padding:120px 0 80px;
+
+background:#f8fafc;
+
+min-height:100vh;
+
+}
+
+.subtitle{
+
+color:#777;
+
+margin-bottom:35px;
+
+}
+
+.content-card{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:15px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+line-height:1.9;
+
+}
+
+.content-card h2{
+
+margin-top:30px;
+
+color:#2E8B57;
+
+}
+
+.content-card ul{
+
+padding-left:25px;
+
+}
+
+.navigation{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:40px;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+}
+
+/* ======================================
+   PUSAT MATERI BK
+====================================== */
+
+.materi{
+    padding:120px 0 80px;
+    background:#f8fafc;
+    min-height:100vh;
+}
+
+.materi h1{
+    text-align:center;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.materi p{
+    text-align:center;
+    color:#666;
+    margin-bottom:45px;
+}
+
+.materi .cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.materi .card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.materi .card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+.materi .card i{
+
+    font-size:45px;
+
+    color:#2E8B57;
+
+    margin-bottom:18px;
+
+}
+
+.materi .card h3{
+
+    font-size:20px;
+
+    margin-bottom:15px;
+
+    color:#222;
+
+    min-height:55px;
+
+}
+
+.btn-card{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    background:#2E8B57;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-card:hover{
+
+    background:#1d6b43;
+
+    transform:scale(1.05);
+
+}
+
+.btn-primary{
+
+    display:inline-block;
+
+    padding:12px 24px;
+
+    background:#2E8B57;
+
+    color:#fff;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#1d6b43;
+
+}
+
+@media(max-width:768px){
+
+.materi{
+
+padding:100px 20px 60px;
+
+}
+
+.materi .card{
+
+padding:25px;
+
+}
+
+.materi .card h3{
+
+font-size:18px;
+
+}
+
+}
+.info-box{
+
+margin-top:35px;
+
+padding:25px;
+
+background:#EAF8F1;
+
+border-left:6px solid #2E8B57;
+
+border-radius:10px;
+
+}
+
+.info-box h3{
+
+color:#2E8B57;
+
+margin-bottom:10px;
+
+}
+
+.info-box i{
+
+margin-right:8px;
+
+}
+
+.bk-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:30px 0;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+.bk-table th{
+    background:#2563eb;
+    color:#fff;
+    padding:15px;
+    text-align:left;
+}
+
+.bk-table td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+.bk-table tr:nth-child(even){
+    background:#f8f9fa;
+}
+
+.bk-table tr:hover{
+    background:#eef5ff;
+}
+
+.service-card{
+    margin:25px 0;
+    padding:25px;
+    border-left:5px solid #2563eb;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.service-card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.btn-card{
+
+display:inline-block;
+margin-top:18px;
+padding:10px 20px;
+background:#2563eb;
+color:white;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+
+}
+
+.btn-card:hover{
+
+background:#1e4fd8;
+transform:translateY(-3px);
+
+}
+
+.card i{
+
+font-size:42px;
+color:#2563eb;
+margin-bottom:15px;
+
+}
+
+.card p{
+
+margin-top:10px;
+margin-bottom:15px;
+line-height:1.7;
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    padding:120px 0 80px;
+    background:linear-gradient(135deg,#f8fbff,#eef6ff);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.2fr 0.8fr;
+    align-items:center;
+    gap:70px;
+}
+
+.hero-text span{
+    display:inline-block;
+    background:#dbeafe;
+    color:#2563eb;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero-text h1{
+    font-size:52px;
+    font-weight:700;
+    color:#1e3a8a;
+    line-height:1.2;
+    margin-bottom:25px;
+}
+
+.hero-text p{
+    font-size:17px;
+    line-height:1.9;
+    color:#555;
+    text-align:justify;
+    margin-bottom:35px;
+}
+
+.hero-button{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary{
+    padding:14px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#2563eb;
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:2px solid #2563eb;
+    color:#2563eb;
+    background:#fff;
+}
+
+.btn-secondary:hover{
+    background:#2563eb;
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+/* ================= FOTO ================= */
+
+.hero-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:420px;
+    border-radius:25px;
+    object-fit:cover;
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.hero-image img:hover{
+    transform:scale(1.03);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+text-align:center;
+
+}
+
+.hero-text p{
+
+text-align:center;
+
+}
+
+.hero-button{
+
+justify-content:center;
+
+}
+
+.hero-text h1{
+
+font-size:40px;
+
+}
+
+.hero-image{
+
+margin-top:40px;
+
+}
+
+.hero-image img{
+
+max-width:320px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero{
+
+padding:90px 0 60px;
+
+}
+
+.hero-text h1{
+
+font-size:32px;
+
+}
+
+.hero-text p{
+
+font-size:15px;
+line-height:1.7;
+
+}
+
+.hero-image img{
+
+max-width:260px;
+
+}
+
+}
